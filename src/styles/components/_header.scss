@@ -3,7 +3,6 @@
   position: fixed; //para que salga en toda la pantalla
   background-color: $second-color;
   width: 100%;
-  position: absolute;
   bottom: 0;
   left: 0;
   @include extender-space-row(space-between);
@@ -13,6 +12,18 @@
     font-size: 2rem;
     color: $first-color;
     font-weight: bold;
+  }
+
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key:lg )) {
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+
+    .moro {
+      font-size: 2rem;
+      color: $first-color;
+      font-weight: bold;
+    }
   }
 }
 
@@ -46,6 +57,25 @@
       &:hover {
         color: $white-color;
         background-color: $first-color;
+      }
+    }
+  }
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key:lg )) {
+    position: static;
+    animation: none;
+    @include extender-space-row(center);
+
+    li {
+      a {
+        color: $first-color;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: $white-color;
+          background-color: $first-color;
+        }
       }
     }
   }
