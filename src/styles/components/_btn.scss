@@ -1,0 +1,32 @@
+/* .btn-hamburger {
+  padding: 0.5rem 1rem;
+  color: $white-color;
+  display: block;
+  background-color: $second-color;
+  text-align: center;
+  outline: none;
+  border: 0;
+  border-radius: 0.3rem;
+
+  svg {
+    fill: $white-color;
+  }
+
+  &:hover {
+    background-color: lighten($color: $second-color, $amount: 5%);
+    border: $border-sm-primary;
+  }
+
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key:lg )) {
+    display: none;
+  }
+}
+ */
+
+.hamburger {
+  display: block !important;
+
+  @media screen and (min-width: map-get($map: $grid-breakpoints, $key:lg )) {
+    display: none !important;
+  }
+}

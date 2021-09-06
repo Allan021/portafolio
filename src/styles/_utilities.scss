@@ -1,0 +1,55 @@
+@media screen and (min-width: map-get($map:$grid-breakpoints , $key:sm )) {
+  .text-sm-center {
+    text-align: center;
+  }
+  .text-sm-left {
+    text-align: left;
+  }
+  .text-sm-right {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: map-get($map:$grid-breakpoints , $key:md )) {
+  .text-md-center {
+    text-align: center;
+  }
+  .text-md-left {
+    text-align: left;
+  }
+  .text-md-right {
+    text-align: right;
+  }
+}
+@media screen and (min-width: map-get($map:$grid-breakpoints , $key:lg )) {
+  .text-lg-center {
+    text-align: center;
+  }
+  .text-lg-left {
+    text-align: left;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
+}
+
+@mixin extender($px, $position: fixed) {
+  position: $position;
+  top: $px;
+  bottom: $px;
+  right: $px;
+  left: $px;
+}
+@mixin extender-space-row($space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+}
+@mixin extender-space-column($space) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $space;
+  align-items: center;
+}
+
+$transition: all 0.5s ease-in-out;

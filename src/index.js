@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Portafolio } from "./components/Portafolio";
-
+import PortafolioRouter from "./PortafolioRouter";
+import "./styles/styles.scss";
 ReactDOM.render(
   <React.StrictMode>
-    <Portafolio />
+    <PortafolioRouter />
   </React.StrictMode>,
   document.getElementById("root")
 );

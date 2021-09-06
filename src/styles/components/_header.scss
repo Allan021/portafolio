@@ -1,0 +1,52 @@
+.header {
+  height: $height-header;
+  position: fixed; //para que salga en toda la pantalla
+  background-color: $second-color;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include extender-space-row(space-between);
+  padding: 1rem;
+
+  .moro {
+    font-size: 2rem;
+    color: $first-color;
+    font-weight: bold;
+  }
+}
+
+.is-active {
+  display: block;
+}
+
+.is-not-active {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  list-style: none;
+  bottom: $height-header;
+  left: 0;
+  width: 100%;
+  background-color: $second-color;
+  padding-left: 0;
+
+  li {
+    a {
+      display: block;
+      width: 100%;
+      transition: $transition;
+      color: $first-color;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $white-color;
+        background-color: $first-color;
+      }
+    }
+  }
+}

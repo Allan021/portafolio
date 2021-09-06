@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  font-size: $font-normal-size;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    color: $title-color;
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.813rem;
+}
+h6 {
+  font-size: 0.688rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
